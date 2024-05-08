@@ -95,11 +95,11 @@ body{
     outline: none;
     cursor: pointer;
     background: var(--color-primary);
+    transition: background 0.5s;
 }
 
 .form__button:hover{
     background: var(--color-primary-dark);
-    transition: 0.5s;
 }
 
 .form__button:active{
@@ -129,10 +129,10 @@ body{
     }
 
     100% {
-        background-position: 1000% 750%;
+        background-position: 3256.25% 1000%;
     }
 }
 
 body {
-    animation: movingBackground 55s linear infinite;
+    animation: movingBackground 200s linear infinite;
 }
