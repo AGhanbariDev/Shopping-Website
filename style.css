@@ -1,6 +1,6 @@
 body{
-    --color-primary: #009579;
-    --color-primary-dark: #007f67;
+    --color-primary: #272626;
+    --color-primary-dark: #000000;
     --color-secondary: #252c6a;
     --color-error: #cc3333;
     --color-success: #4bb544;
@@ -12,7 +12,9 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    background: url(images/storebackground.jpg);
+    background-image: url(images/storebackground.jpg);
+    background-position : center center;
+    background-attachment: fixed;
 }
 
 .container{
@@ -118,4 +120,19 @@ body{
 .form__link:hover{
     text-decoration: underline;
 
+}
+
+/* Animations */
+@keyframes movingBackground {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 1000% 750%;
+    }
+}
+
+body {
+    animation: movingBackground 55s linear infinite;
 }
