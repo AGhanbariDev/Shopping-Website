@@ -1,6 +1,6 @@
 body{
-    --color-primary: #272626;
-    --color-primary-dark: #000000;
+    --color-primary: #cc9813;
+    --color-primary-dark: #a77c11;
     --color-secondary: #252c6a;
     --color-error: #cc3333;
     --color-success: #4bb544;
@@ -84,7 +84,22 @@ body{
     border-width: 0.15rem;
 }
 
-.form__button{
+.form__input--error {
+    color: var(--color-error);
+    border-color: var(--color-error);
+    color: var(--color-error);
+}
+
+.form__input-error-message {
+    margin-top: 0.15rem;
+    font-size: 0.85rem;
+    color: var(--color-error);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__button {
     width: 100%;
     padding: 1rem 2rem;
     font-weight: bold;

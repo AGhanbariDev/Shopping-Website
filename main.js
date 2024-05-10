@@ -6,6 +6,16 @@ function setFormMessage(formElement, type, message) {
     messageElement.classList.add(`form__message--${type}`);
 }
 
+function setInputError(inputElement, message) {
+    inputElement.classList.add("form__input--error");
+    inputElement.parentElement.querySelector(".form__input-error-message").textContent = message;
+}
+
+function cleanInputError(inputElement) {
+    inputElement.classList.remove("form__input--error");
+    inputElement.parentElement.querySelector(".form__input-error-message").textContent = "";
+} 
+
 // setFormMessage(loginForm, "success", "You're logged in!");
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -30,5 +40,18 @@ document.addEventListener("DOMContentLoaded", () => {
         // Perform your AJAX/Fetch login
 
         setFormMessage(loginForm, "error", "Invalid username or password");
+    });
+
+    document.querySelectorAll(".form__input").forEach(inputElement => {
+        inputElement.addEventListener("blur", e => {
+            if (e.target.id === "signupUsername" && e.target.value.length < 10) {
+                setInputError(inputElement, "Username must have at least 10 characters long");
+            }
+        });
+    
+    inputElement.addEventListener("input", e=> {
+        cleanInputError(inputElement);
+        });
+    
     });
 });
