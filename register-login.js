@@ -3,7 +3,6 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } f
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCwb4ZoPCMC8hrRVsANXcfN_xmEcNgnKQQ",
     authDomain: "shopping-website-registering.firebaseapp.com",
     databaseURL: "https://shopping-website-registering-default-rtdb.firebaseio.com",
     projectId: "shopping-website-registering",
