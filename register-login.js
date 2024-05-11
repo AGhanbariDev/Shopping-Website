@@ -1,15 +1,9 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js';
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    authDomain: "shopping-website-registering.firebaseapp.com",
-    databaseURL: "https://shopping-website-registering-default-rtdb.firebaseio.com",
-    projectId: "shopping-website-registering",
-    storageBucket: "shopping-website-registering.appspot.com",
-    messagingSenderId: "989652284566",
-    appId: "1:989652284566:web:29d78358b9c991a0aa7eb7",
-    measurementId: "G-G4E2G2HZPF"
+    /* Protect the information that needs to go here */
 };
 
 // Initialize Firebase
