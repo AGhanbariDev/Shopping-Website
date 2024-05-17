@@ -1,7 +1,6 @@
 {
   "name": "shopping-website",
   "version": "1.0.0",
-  "type": "module",
   "description": "This is an incomplete website where I am learning to create a login system.",
   "main": "main.js",
   "scripts": {
@@ -11,8 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.4.5",
-    "firebase": "^10.11.1",
-    "firebase-admin": "^12.1.0"
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "vite": "^5.2.11"
   }
 }
